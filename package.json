@@ -1,12 +1,12 @@
 {
   "name": "bun-demo",
-  "module": "index.ts",
+  "module": "src/index.ts",
   "type": "module",
   "private": true,
   "scripts": {
-    "start": "bun run index.ts",
-    "start:dev": "bun --watch run index.ts",
-    "build": "bun build --minify --sourcemap --compile --bytecode index.ts --outfile dist"
+    "start": "bun run src/index.ts",
+    "start:dev": "bun --watch run src/index.ts",
+    "build": "bun build --minify-whitespace --minify-syntax --sourcemap --compile --bytecode src/index.ts --outfile dist"
   },
   "devDependencies": {
     "@types/bun": "^1.2.11",
@@ -16,6 +16,8 @@
     "typescript": "^5"
   },
   "dependencies": {
+    "@elysiajs/jwt": "^1.2.0",
+    "elysia": "^1.2.25",
     "figlet": "^1.8.1"
   }
 }
