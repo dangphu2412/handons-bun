@@ -1,0 +1,21 @@
+{
+  "name": "bun-demo",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "bun run index.ts",
+    "start:dev": "bun --watch run index.ts",
+    "build": "bun build --minify --sourcemap --compile --bytecode index.ts --outfile dist"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.2.11",
+    "@types/figlet": "^1.7.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "figlet": "^1.8.1"
+  }
+}
